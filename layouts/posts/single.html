@@ -1,5 +1,5 @@
 {{ define "main" }}
-<main class="content-page container pt-7 pb-5">
+<main class="content-page container pt-9 pb-5">
     {{ $page := . }}
     <div class="row">
         <div class="col">
@@ -38,7 +38,9 @@
                             {{ $page.Content }}
                         </div>
 
+                        
                         {{- with $page.Params.tags -}}
+                            
                             <div class="tags my-3">
                             {{- range . -}}
                                 <a class="badge badge-pill badge-light border mr-2" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">
