@@ -43,6 +43,11 @@
     <link rel="stylesheet" href="{{ "css/" | relURL }}{{ . }}">
 {{ end }}
 
+<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+
+{{ $style := resources.Get "styles.scss" | resources.ToCSS (dict "outputStyle" "compressed") | fingerprint }}
+<link rel="stylesheet" href="{{ $style.Permalink }}">
+
 <link rel="canonical" href="{{ .Permalink }}">
 {{- with .OutputFormats.Get "RSS" }}
   <link href="{{ .Permalink }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}">
