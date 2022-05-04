@@ -2,7 +2,16 @@
     {{ $page := . }}
     <a href="{{ $page.RelPermalink }}" class="d-block">
 
-        <img src="{{ $page.Params.image }}" class="card-img-top mx-auto d-block" alt="{{ $page.Title }}">
+        {{ if isset $page.Params "image" }}
+            <img src="{{ $page.Params.image }}" class="card-img-top mx-auto d-block" alt="{{ $page.Title }}">
+        {{ else }}
+            <div style="display: flex; flex-wrap: wrap; height: 160px; overflow: hidden;">
+                {{ $height:= div 100 (div (add (len .Pages) 1 ) 2)}}
+                {{ range .Pages }}
+                    <img src="{{ .Params.image }}" class="card-img-flex mx-auto d-block" alt="{{ .Title }}" height="{{$height}}%">
+                {{ end }}
+            </div>
+        {{ end }}
 
         <div class="card-body">
             <h4 class="card-title">{{ $page.Title }}</h4>

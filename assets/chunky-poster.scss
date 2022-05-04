@@ -1,5 +1,5 @@
 body{
-    font-family: $font-family-sans-serif;
+    font-family: $font-family-sans-serif,"Microsoft JhengHei";
 }
 
 .homepage-image {   
@@ -85,4 +85,28 @@ ul.share.nav {
 
 footer a:not(.icons) {
     color: $gray-200;
+}
+
+.card-img-flex{
+    object-fit: cover;
+    //height: 100%;
+    width:auto;
+    margin: 0%;
+    flex-grow: 10;
+}
+
+img[src$='#center']{
+    width:100%;
+    display: block;
+    //margin: 0.7rem auto; 
+} 
+
+img[src$='#centers']{
+    height :14rem;
+    display: block;
+    //margin: 0.7rem auto; 
+} 
+
+.card{
+    border-width: 0px;
 }

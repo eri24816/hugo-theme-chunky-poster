@@ -1,15 +1,4 @@
 
-img[src$='#center']{
-    width:100%;
-    display: block;
-    margin: 0.7rem auto; 
-} 
-
-img[src$='#centers']{
-    height :14rem;
-    display: block;
-    margin: 0.7rem auto; 
-} 
 
 body::-webkit-scrollbar {
     display: none;
@@ -25,7 +14,7 @@ body {
 }
 
 body{
-    background-image: url(https://i.imgur.com/pkiX69L.jpg);
+    background-image: url(/image/blog_cover.png);
 
 	background-repeat :no-repeat;
 	background-attachment :fixed;
@@ -40,7 +29,7 @@ h1,h2{
 }
 
 h3, h4, h5, h6{
-    color:rgba(176, 204, 255, 0.801);
+    color:#3ba5fccc;
 }
  
 a{
@@ -61,7 +50,7 @@ a:hover {
     background: #22222200!important;
 }
 
-.container{max-width: 1600px;}
+.container{max-width: 1500px;}
 
 .bg-dark {
     background-color: #00000000!important;
@@ -79,8 +68,8 @@ a:hover {
 }
 
 .card{
-    background-color:rgba(0, 0, 0, 0.664);
-    
+    //background-color:rgba(0, 0, 0, 0.664);
+    background: linear-gradient(50deg, rgba(16, 12, 20, 0.364) 0%, rgba(0, 0, 0, 0.664) 100%);
 }
 .card-text{color:rgb(195, 198, 209);}
 
