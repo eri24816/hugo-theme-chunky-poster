@@ -2,12 +2,13 @@
 <html lang="{{ .Site.LanguageCode | default "en-us" }}">
 <head>
     
-    {{ template "_internal/google_analytics.html" . }}
-    {{ template "_internal/google_analytics_async.html" . }}
+    
     
     {{ partial "head.html" . }}
 </head>
 <body>
+    {{ template "_internal/google_analytics.html" . }}
+    {{ template "_internal/google_analytics_async.html" . }}
     {{ partial "header.html" . }}
 
     {{ block "main" . }}{{ end }}
