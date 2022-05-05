@@ -11,7 +11,7 @@
                             <span class="mr-2"><i class="fas fa-book-open mr-2"></i>{{ T "wordCount" $page.WordCount }}</span>
                             <span><i class="fas fa-clock mr-2"></i>{{ T "readingTime" $page.ReadingTime }}</span>
                         </div>
-
+                        <a href="{{ "/categories/" | relLangURL }}{{ $page.Params.categories | urlize }}">{{$page.Params.categories}} ></a>
                         <h1>{{ $page.Title }}</h1>
 
                         {{ partial "authors.html" $page }}

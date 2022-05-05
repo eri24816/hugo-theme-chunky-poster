@@ -11,7 +11,18 @@
 
             <h1 class="display-4">{{ .Site.Title }}</h1>
             {{- with .Site.Params.description -}}
-                <h3 class="font-weight-normal">{{ . | safeHTML }}</h3>
+                
+                <div id ="description" class="font-weight-normal" style="max-width: 500px;"></div>
+                <div style="text-align: right; max-width: 500px; margin-top: 20px;" >- eri24816</div>
+                <script>
+                    function setDescription(description) {
+                        description=description[Math.floor(Math.random() * description.length)];
+                        $("#description").html(description);
+                    }
+                    $("#description")[0].addEventListener('load',setDescription({{.}}));
+                    
+                
+                </script>
             {{- end -}}
         </div>
     </div>
