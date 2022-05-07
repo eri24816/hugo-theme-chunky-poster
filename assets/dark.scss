@@ -14,13 +14,14 @@ body {
 }
 
 body{
-    background-image: url(/image/blog_cover.png);
+    background-image: url(/image/blog_cover2a.png);
 
 	background-repeat :no-repeat;
 	background-attachment :fixed;
     background-position :-400px;
-    background-size :100%;
+    background-size:cover;
     backdrop-filter:brightness(100%) ;
+    background-position: center;
 }
 
 
