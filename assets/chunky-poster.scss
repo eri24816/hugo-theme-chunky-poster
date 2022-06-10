@@ -96,17 +96,16 @@ footer a:not(.icons) {
 }
 
 img[src$='#center']{
-    width:100%;
+    max-width:100%;
+    max-height: 20rem;
     display: block;
-    //margin: 0.7rem auto; 
+    margin: 0.7rem auto; 
 } 
 
 img[src$='#centers']{
     height :14rem;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    //margin: 0.7rem auto; 
+    margin: 0.7rem auto; 
 } 
 
 .card{
