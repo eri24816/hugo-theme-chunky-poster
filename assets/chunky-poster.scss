@@ -104,6 +104,8 @@ img[src$='#center']{
 img[src$='#centers']{
     height :14rem;
     display: block;
+    margin-left: auto;
+    margin-right: auto;
     //margin: 0.7rem auto; 
 } 
 
