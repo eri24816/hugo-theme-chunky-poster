@@ -1,5 +1,6 @@
 body{
     font-family: $font-family-sans-serif,"Microsoft JhengHei";
+    color:#c8c8c8;
 }
 
 .homepage-image {   
@@ -110,4 +111,9 @@ img[src$='#centers']{
 
 .card{
     border-width: 0px;
+}
+
+.articles, .latest {
+    max-width: 1000px;
+    margin: auto;
 }
