@@ -49,7 +49,7 @@
     {{- end -}}
 
     <!-- Articles -->
-    <div class="articles row row-cols-1 row-cols-lg-3">
+    <div class="articles row row-cols-1 row-cols-lg-3 g-5">
         {{ range after 1 (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
             <div class="col mb-3">
                 {{ .Render "card" }}
